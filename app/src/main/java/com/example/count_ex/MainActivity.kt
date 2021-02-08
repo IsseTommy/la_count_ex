@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        changeUI()
+
         plusButton.setOnClickListener {
             num += 1
             changeUI()
