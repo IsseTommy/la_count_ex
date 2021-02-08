@@ -6,67 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/numTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="0"
-        android:textSize="70sp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keywordTextView" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/plusButton"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="75dp"
-        android:background="#6200EE"
-        android:text="+"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numTextView" />
+        <TextView
+            android:id="@+id/keywordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="その番号のキーワードは存在しません"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/minusButton"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="50dp"
-        android:background="#03DAC5"
-        android:text="-"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:backgroundTint="#03DAC5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plusButton" />
+        <TextView
+            android:id="@+id/numTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="0"
+            android:textSize="70sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/clearButton"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="50dp"
-        android:background="#AAAAAA"
-        android:text="CLEAR"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:backgroundTint="#AAAAAA"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/minusButton" />
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="50dp"
+            android:background="#03DAC5"
+            android:text="-"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:backgroundTint="#03DAC5" />
 
-    <TextView
-        android:id="@+id/keywordTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="その番号のキーワードは存在しません"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="75dp"
+            android:background="#6200EE"
+            android:text="+"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="50dp"
+            android:background="#AAAAAA"
+            android:text="CLEAR"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:backgroundTint="#AAAAAA" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
